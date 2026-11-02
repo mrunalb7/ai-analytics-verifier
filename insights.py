@@ -41,3 +41,4 @@ def generate(facts: dict) -> tuple[str, str]:
     if os.environ.get("GEMINI_API_KEY"):
         return gemini_insights(facts), "gemini"
     return offline_insights(facts), "offline"
+
